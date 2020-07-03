@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Filter Generator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/style.min.css">
+</head>
+<body>
+    <main class="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-lg-8 offset-md-2 offset-lg-2">
+                    <h1 class="mb-5">CSS Filter Generator</h1>
+                    <div class="target-color">
+                        <div class="target-color-title">Hex Color</div>
+                        <div class="target-color-content">
+                            <input id="target" class="form-control target" type="text" placeholder="Hex Color" value="#6d6875"/>
+                            <button class="btn btn-primary execute">Compute Filters</button>
+                        </div>
+                    </div>
+                    <div class="color-box">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="color-content">
+                                    <div class="color-content-title"><i>background-color:</i></div>
+                                    <div class="pixel pixel-color"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="color-content">
+                                    <div class="color-content-title"><i>filter:</i></div>
+                                    <div class="color-content-content">
+                                        <div class="pixel filter-color"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter-detail-content">
+                        <p class="filter-detail"></p>
+                        <p class="loss-detail"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+      <script src="assets/app.js"></script>
+</body>
+</html>
